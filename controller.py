@@ -11,7 +11,9 @@ def button_click():
     elif t == 3:
         view.search_number(cont)
     elif t == 4:
-        view.show_all(cont)    
+        view.show_all(cont) 
+    elif t == 5:
+        model.write_contact(view.write())       
     else:
         print('попробуйте снова')        
 

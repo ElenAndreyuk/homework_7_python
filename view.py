@@ -4,8 +4,9 @@ def start_selection():
     sel = int(input(''' 1 - поиск по имени, 
                         2 - поиск по фамилии,
                         3 - поиск по номеру телефона,
-                        4 - огласите весь список пожалуйста.''' ))
-    if 0< sel<5:
+                        4 - огласите весь список пожалуйста,
+                        5 - добавить контакт в справочник: ''' ))
+    if 0< sel<6:
         return sel
     else:
         print('ошибка ввода')  
@@ -47,6 +48,13 @@ def search_number(d):
     else:
         print('не найдено')
 
+def write():
+    cont = [] 
+    cont.append(input("введите фамилию: "))
+    cont.append(input("введите имя: "))
+    cont.append(input("введите номер телефона: "))
+    cont.append(input("введите описание: "))
+    return cont
                 
 
     

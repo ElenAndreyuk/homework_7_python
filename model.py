@@ -16,3 +16,11 @@ def extract_cvs():
         list_cont_2.append(line)
     data_2.close()
     return list_cont_2        
+
+def write_contact(x):
+    with open ('phones.txt', 'a', encoding='utf-8') as data:
+        for line in x:
+            data.write(line +'\n')
+    # data = open('phones.txt', 'a', encoding='utf-8')
+    # data.write('\n line 2\n')
+    # data.close()
